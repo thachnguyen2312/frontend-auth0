@@ -88,6 +88,7 @@ document.getElementById('btn-public').addEventListener('click', () => {
 document.getElementById('btn-private').addEventListener('click', () => {
   // Call private API with JWT in header
   const token = localStorage.getItem('id_token');
+  console.log('token', localStorage.getItem('id_token'));
   /*
    // block request from happening if no JWT token present
    if (!token) {
