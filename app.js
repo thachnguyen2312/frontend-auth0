@@ -101,7 +101,6 @@ document.getElementById('btn-private').addEventListener('click', () => {
   fetch(PRIVATE_ENDPOINT, {
     method: 'GET',
     headers: {
-      'Access-Control-Allow-Origin': '*',
       Authorization: `Bearer ${token}`,
     },
   })
