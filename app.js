@@ -106,6 +106,7 @@ document.getElementById('btn-private').addEventListener('click', () => {
   })
     .then(response => response.json())
     .then((data) => {
+      console.log('token inside', localStorage.getItem('id_token'));
       console.log('Token:', data);
       document.getElementById('message').textContent = '';
       document.getElementById('message').textContent = data.message;
