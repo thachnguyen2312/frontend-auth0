@@ -99,7 +99,7 @@ document.getElementById('btn-private').addEventListener('click', () => {
   }*/
   // Do request to private endpoint
   fetch(PRIVATE_ENDPOINT, {
-    method: 'GET',
+    method: 'POST',
     headers: {
       Authorization: `Bearer ${token}`,
     },
