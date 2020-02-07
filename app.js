@@ -12,7 +12,7 @@ const lock = new Auth0Lock(AUTH0_CLIENT_ID, AUTH0_DOMAIN, { // eslint-disable-li
 
   auth: {
     params: {
-      scope: 'openid email',
+      scope: 'openid email create:users',
     },
     responseType: 'token id_token',
   },
